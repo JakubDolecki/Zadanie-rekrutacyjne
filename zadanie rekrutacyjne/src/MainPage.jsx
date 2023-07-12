@@ -5,7 +5,6 @@ export function MainPage() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-
     const getData = async () => {
       const url = "https://jsonplaceholder.typicode.com/posts/";
       try {
@@ -18,10 +17,25 @@ export function MainPage() {
     };
 
     getData();
-
   }, []);
-  
-  console.log(data);
 
-  return <span>witam</span>;
+  const sortAsc = () => {
+    const sorted = [...data].sort((a, b) => a.title.length - b.title.length);
+    setData(sorted);
+  };
+
+ 
+
+  //   console.log(data);
+
+  return (
+    <>
+      <button onClick={() => {sortAsc()}}>sort</button>
+      {data.map((post) => (
+        <div key={post.id}>
+          <span>{post.title}</span>
+        </div>
+      ))}
+    </>
+  );
 }
