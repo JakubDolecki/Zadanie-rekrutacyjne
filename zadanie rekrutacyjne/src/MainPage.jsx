@@ -41,6 +41,12 @@ export const Header = styled.h1`
   @media (prefers-color-scheme: dark) {
     color: #dbd7c9;
   }
+  @media (max-width: 870px) {
+    font-size: 60px;
+  }
+  @media (max-width: 606px) {
+    font-size: 40px;
+  }
 `;
 
 export const PostsContainer = styled.div`
@@ -71,6 +77,11 @@ export const SortContainer = styled.div`
   align-items: center;
   margin-top: 20px;
   margin-left: 45px;
+  @media (max-width: 870px) {
+    flex-direction: column;
+    height: 270px;
+    margin-left: 0px;
+  }
 `;
 
 export const SortBy = styled.span`
@@ -80,6 +91,10 @@ export const SortBy = styled.span`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media (max-width: 870px) {
+    font-size: 40px;
+    margin-left: 20px;
+  }
 `;
 
 export const SortingButton = styled.button`
@@ -104,6 +119,9 @@ export const SortingButton = styled.button`
     border-color: #3e3e3e;
     cursor: pointer;
   }
+  @media (max-width: 870px) {
+    margin-top: 20px;
+  }
 `;
 
 export const CancelButton = styled.button`
@@ -120,6 +138,10 @@ export const CancelButton = styled.button`
   &:hover {
     color: #4d0000;
     cursor: pointer;
+  }
+  @media (max-width: 870px) {
+    margin-top: 20px;
+    font-size: 30px;
   }
 `;
 
