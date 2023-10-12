@@ -1,5 +1,5 @@
 # Zadanie-rekrutacyjne
-Application was created using React with plain javascript.
+Application was created using React with plain javascript as recruitment task.
 
 Application supports system dark-mode as well as mobile devices.
 
